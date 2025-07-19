@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none;    /* Firefox */
+      }
+    </style>
+</head>
+
+<body class="bg-[#f5f5f5]">
+
+  <div id="home" class="relative h-screen w-full">
+
+    <video class="absolute top-0 left-0 w-full h-screen object-cover" autoplay muted loop>
+      <source src="media/Bookstore-Stock.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </source>
+    </video>
+
+    <div class="absolute top-0 left-0 w-full h-full bg-white opacity-70"></div>
+
+    <div class="absolute top-0 left-0 w-full h-[100vh] z-10">
+      <nav class="bg-blue-700 w-full mx-auto px-4 py-2 fixed">
+        <ul class="flex justify-between underline items-center text-white">
+          <li><a href="#home">Home</a></li>
+          <li><a href="index-2.html">Products/Services</a></li>
+          <li><a href="test-index.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <img src="media/talrich-transparent-logo.png" alt="Talrich Logo" class="h-[220px] w-auto mx-auto mt-10">
+
+      <div class="flex flex-col items-center -mt-6">
+        <h1 class="text-3xl text-center font-semibold">Supplying all things 
+          stationary
+          office supplies
+          text books 
+          since 1992.
+        </h1>
+        <h2 class="text-2xl text-center mt-10 max-w-[80%]">
+          Get every item on the school's book list or the office's supplies list in one place.
+        </h2>
+        <button class="py-2 px-4 bg-blue-700 text-white rounded-md mt-12 text-2xl">Send us a Message</button>
+        <p class="font-bold">or</p>
+        <button class="py-2 px-4 bg-blue-700 text-white rounded-md mt-2 text-2xl">Visit Us</button>
+        <p>OPEN Monday - Saturday from 9am  -  6pm</p>
+        <P>CLOSED on Sunday</P>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-4 flex flex-col gap-16">
+    <div id="products-services" class="flex flex-col items-center">
+      <h3 class="text-2xl font-semibold underline mb-8 mr-auto">What We Do</h3>
+
+      <div class="flex flex-col gap-2 w-full">
+        <div class="flex w-full h-[16rem] justify-between items-center">
+          <button id="scrollLeft" class="w-[15%] h-[40%] pr-2 py-auto">
+            <img src="media/arrow-left.svg" alt="Left Arrow" class="h-6 w-6 mx-auto">
+          </button>
+          <div id="carousel" class="w-[90%] overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <div class="bg-red-200 text-white w-[16.5rem] h-[16.5rem] inline-flex items-center justify-center">
+              RED
+            </div>
+            <div class="bg-green-200 text-white w-[16.5rem] h-[16.5rem] inline-flex items-center justify-center">
+              GREEN
+            </div>
+            <div class="bg-yellow-200 text-white w-[16.5rem] h-[16.5rem] inline-flex items-center justify-center">
+              YELLOW
+            </div>
+          </div>
+          <button id="scrollRight" class="w-[15%] h-[40%] pl-2 py-auto">
+            <img src="media/arrow-right.svg" alt="Right Arrow" class="h-6 w-6 mx-auto">
+          </button>
+        </div>
+
+        <div class="text-center">Pagination</div>
+      </div>
+
+      <p class="mt-4">Printing & Photocopying
+        <br>
+        Stationary & Office Supplies
+        <br>
+        Textbooks & School Supplies
+        <br>
+        Custom Orders
+      </p>
+      
+ 
+      <button class="bg-blue-700 text-white p-2 text-xl rounded-xl mt-6">Shop Now</button>
+    </div>
+
+    <div id="about">
+      <h3 class="text-2xl font-semibold underline mb-8">How We Got Here</h3>
+      <div class="flex flex-col gap-2 w-full">
+        <div class="flex w-full h-[16rem] justify-between items-center">
+          <button id="scrollLeft" class="w-[15%] h-[40%] pr-2 py-auto">
+            <img src="media/arrow-left.svg" alt="Left Arrow" class="h-6 w-6 mx-auto">
+          </button>
+          <div id="carousel" class="w-[90%] overflow-x-auto whitespace-nowrap scrollbar-hide">
+            <div class="bg-red-200 text-white w-[16.5rem] h-[16.5rem] inline-flex items-center justify-center">
+              RED
+            </div>
+            <div class="bg-green-200 text-white w-[16.5rem] h-[16.5rem] inline-flex items-center justify-center">
+              GREEN
+            </div>
+            <div class="bg-yellow-200 text-white w-[16.5rem] h-[16.5rem] inline-flex items-center justify-center">
+              YELLOW
+            </div>
+          </div>
+          <button id="scrollRight" class="w-[15%] h-[40%] pl-2 py-auto">
+            <img src="media/arrow-right.svg" alt="Right Arrow" class="h-6 w-6 mx-auto">
+          </button>
+        </div>
+
+        <div class="text-center">Pagination</div>
+      </div>
+    </div>
+
+    <div id="contact">
+      <h3 class="text-2xl font-semibold underline mb-10">How To Reach Us</h3>
+        <div class="w-full h-[170px] bg-gray-400">
+          MAP MAP MAP MAP 
+        </div>
+        <div class="flex flex-col gap-6 mt-4">
+          <span class="flex items-center gap-3">
+            <img src="media/phone.svg" alt="Mobile Phone" class="w-4 h-4">
+            <p class="font-semibold text-lg">+1 (876) 957-3111 <span class="font-bold">OR</span>+1 (876) 204-2510</p>
+          </span>
+          <span class="flex items-center gap-3">
+            <img src="media/mail.svg" alt="Email" class="w-4 h-4">
+            <p class="font-semibold text-lg">examplepants@gmail.com</p>
+          </span>
+        </div>
+        
+    </div>
+
+
+  </div>
+
+  <footer class="bg-gray-600 text-center p-4 mt-6 text-white">
+    <img src="media/omni-logo-removebg-preview.png" alt="Omni-Ray Logo" class="h-[25px] w-auto mx-auto mb-2">
+    <span class="text-gray-300">Powered By</span> <a href="#" class="underline">Omni-Ray Software Solutions</a>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousel = document.getElementById('carousel');
+      const scrollLeftBtn = document.getElementById('scrollLeft');
+      const scrollRightBtn = document.getElementById('scrollRight');
+      
+      // Width of one carousel item (16.5rem + margin if any)
+      // Since you're using inline-flex, the items are directly next to each other
+      const itemWidth = 17 * 16; // Convert rem to pixels (1rem = 16px typically)
+      
+      // Scroll left button functionality
+      scrollLeftBtn.addEventListener('click', function() {
+        carousel.scrollBy({
+          left: -itemWidth,
+          behavior: 'smooth'
+        });
+      });
+      
+      // Scroll right button functionality
+      scrollRightBtn.addEventListener('click', function() {
+        carousel.scrollBy({
+          left: itemWidth,
+          behavior: 'smooth'
+        });
+      });
+      
+      // Optional: Disable buttons when at start/end of carousel
+      function updateButtonStates() {
+        const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+        
+        scrollLeftBtn.disabled = carousel.scrollLeft <= 0;
+        scrollRightBtn.disabled = carousel.scrollLeft >= maxScrollLeft;
+      }
+      
+      // Update button states on scroll
+      carousel.addEventListener('scroll', updateButtonStates);
+      
+      // Initial button state update
+      updateButtonStates();
+    });
+  </script>
+</body>
+
+</html>

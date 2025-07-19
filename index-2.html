@@ -1,0 +1,267 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- SwiperJS-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body class="bg-white flex flex-col min-h-screen">
+    <main class="bg-[#d9f0f3] pb-8">
+        <img src="media/talrich-transparent-logo.png" alt="Talrich Logo" class="h-[190px] w-auto mx-auto -mt-[20px]">
+        <div class="text-center -mt-8 mb-4">
+            <h1 class="text-[1.675rem] font-bold">The 1-stop Stationary Shop.</h1>
+            <p>since 1992</p>
+        </div>
+
+        <div class="relative w-[95%] mx-auto h-[24rem] rounded-t-lg overflow-hidden">
+            <div class="absolute inset-0 bg-black opacity-60 z-10 rounded-t-lg"></div>
+            <div class="absolute flex flex-col justify-center w-full h-full z-20 px-6">
+                <h2 class="text-white text-xl z-20 font-semibold underline">Visit Us</h2>
+                <div class="p-3 bg-white opacity-90 z-20 flex flex-col gap-2 mt-4 rounded-md drop-shadow-md">
+                    <p class="text-xl font-bold">Shop #3, Plaza De Negril</p>
+                    <p class="text-lg">Negril, Westmoreland</p>
+                    <p class="text-lg -mt-2">Jamaica</p>
+                    <p class="text-2xl font-bold mt-4"> Monday - Saturday</p>
+                    <p class="text-2xl font-bold -mt-2">9am - 6pm</p>
+                    <p class="font-bold text-xl mt-2 text-red-700">CLOSED on SUNDAYS</p>
+                </div>
+                <a href="https://maps.app.goo.gl/uavHaxq3Rfw8W8Vz6" class="relative text-black text-lg px-4 py-2 rounded-md overflow-hidden bg-[url('media/pexels-shvetsa-5217882.jpg')] bg-cover bg-center mt-4 w-fit cursor-pointer">
+                    <!-- White overlay -->
+                    <span class="absolute inset-0 bg-white/50"></span>
+                        <!-- Button text -->
+                    <span class="relative z-10 font-semibold">Click to get directions</span>
+                </a>
+            </div>
+            <video class="w-full h-full object-cover" autoplay muted loop playsinline webkit-playsinline>
+                <source src="media/Bookstore-Stock.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+        <div class="bg-white w-[95%] mx-auto p-6 pt-4 rounded-b-lg drop-shadow-lg">
+            <h2 class="text-xl mb-4 font-semibold underline">Contact Us</h2>
+            <div class="flex flex-col gap-2 mb-4">
+                <p class="text-2xl font-bold">+1 (876) 957-3111</p>
+                <p class="ml-4">or</p>
+                <p class="text-2xl font-bold">+1 (876) 204-2510</p>
+            </div>
+            <a href="https://wa.link/1bx4wq" class="py-2 px-4 bg-[#29A71A] text-white rounded-md text-lg flex items-center border-l-[4px] border-b-[4px] border-r-[1px] border-t-[1px] border-[#1e7d14] w-fit cursor-pointer">
+                <img src="media/whatsapp.png" alt="Whatsapp Icon" class="w-9 h-9 inline-block mr-2"> Reach us on WhatsApp
+            </a>
+        </div>
+        <div class="bg-white w-[95%] mx-auto p-6 mt-5 rounded-lg drop-shadow-lg">
+            <h2 class="text-xl mb-4 underline">Products</h2>
+            <div class="swiper w-[100%] h-fit pb-10">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="relative rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+                            <img src="media/pexels-pixabay-159644.jpg" alt="Art Supplies" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/60"></div>
+                            <!-- Content -->
+                            <div class="relative z-10 flex flex-col text-white p-4">
+                                <div class="flex gap-2 items-center">
+                                    <div class="text-2xl">🎨</div>
+                                    <h3 class="text-xl font-semibold">Art Supplies</h3>
+                                </div>
+                                <p class="text-md font-bold mt-2">
+                                    Perfect for students, hobbyists, and professionals.
+                                    <ul class="list-disc ml-6 mt-4">
+                                        <li>Paints</li>
+                                        <li>Brushes</li>
+                                        <li>Sketchbooks</li>
+                                        <li>Canvas</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="relative rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+                            <img src="media/pexels-fauxels-3183132.jpg" alt="Office Supplies" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/80"></div>  
+                            <!-- Content -->
+                            <div class="relative z-10 flex flex-col text-white p-4">    
+                                <div class="flex gap-2 items-center">
+                                    <div class="text-2xl">📎</div>
+                                    <h3 class="text-xl font-semibold">Office Supplies</h3>
+                                </div>
+                                <p class="text-md font-bold mt-2">
+                                    Everything you need to keep your workspace efficient.
+                                    <ul class="list-disc ml-6 mt-4">
+                                        <li>Paper</li>
+                                        <li>Notebooks</li>
+                                        <li>Folders</li>
+                                        <li>Writing Instruments</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="relative rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+                            <img src="media/pexels-pixabay-159497.jpg" alt="School Supplies" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/60"></div>
+                            <!-- Content -->
+                            <div class="relative z-10 flex flex-col text-white p-4">
+                                <div class="flex gap-2 items-center">
+                                    <div class="text-2xl">📚</div>
+                                    <h3 class="text-xl font-semibold">School Supplies</h3>
+                                </div>
+                                <p class="text-md font-bold mt-2">
+                                    Everything students need for a successful school year.
+                                    <ul class="list-disc ml-6 mt-4">
+                                        <li>Notebooks</li>
+                                        <li>Pens & Pencils</li>
+                                        <li>Binders & Folders</li>
+                                        <li>Calculators</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination mb-2"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="flex items-center mb-6 gap-2 mx-auto w-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                </svg>
+                <p class="text-sm">Swipe</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <img src="media/info.svg" alt="Info Icon" class="inline-block w-6 h-6">
+                <p><span class="font-bold">Call or Message us</span> to ask about specific items.</p>
+            </div>
+        </div>
+        <div class="bg-white w-[95%] mx-auto p-6 mt-5 rounded-lg drop-shadow-lg">
+            <h2 class="text-xl mb-4 underline">Services</h2>
+            <div class="swiper w-[100%] h-fit pb-10">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="relative rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+                            <img src="media/printer-with-picture-mountain-it-1024x585.jpg" alt="Printing" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/60"></div>
+                            <!-- Content -->
+                            <div class="relative z-10 flex flex-col text-white p-4">
+                                <div class="flex gap-2 items-center">
+                                    <div class="text-2xl mb-3">🖨️</div>
+                                    <h3 class="text-xl font-semibold">Printing</h3>
+                                </div>
+                                <p class="text-md font-bold">
+                                    High-quality printing services for documents, flyers, posters, and more. Perfect for students and businesses alike.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="relative rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+                            <img src="media/5cfa0d3fc48ebb94ed250f47_how-to-photocopy-a-book-hero-image.jpg" alt="Photocopying" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/60"></div>  
+                            <!-- Content -->
+                            <div class="relative z-10 flex flex-col text-white p-4">    
+                                <div class="flex gap-2 items-center">
+                                    <div class="text-2xl mb-3">📄</div>
+                                    <h3 class="text-xl font-semibold">Photocopying</h3>
+                                </div>
+                                <p class="text-md font-bold">
+                                    Fast and reliable photocopying services for all your documents. Ideal for students, professionals, and businesses.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="relative rounded-lg overflow-hidden shadow hover:shadow-lg transition">
+                            <img src="media/DFS23-BLOG-13DECT23-DD0003.jpg" alt="Laminating" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/60"></div>
+                            <!-- Content -->
+                            <div class="relative z-10 flex flex-col text-white p-4">
+                                <div class="flex gap-2 items-center">
+                                    <div class="text-2xl mb-3">🔖</div>
+                                    <h3 class="text-xl font-semibold">Laminating</h3>
+                                </div>
+                                <p class="text-md font-bold">
+                                    Protect your important documents with our laminating services. Perfect for certificates, ID cards, and more.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination mb-2"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="flex items-center mb-8 gap-2  mx-auto w-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                </svg>
+                <p class="text-sm">Swipe</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+            </div>      
+            <div class="flex items-center gap-2">
+                <img src="media/info.svg" alt="Info Icon" class="inline-block w-6 h-6">
+                <p><span class="font-bold">Call or Message us</span> to ask about custom orders.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-white p-4 text-center">
+        <div>
+            <a href="https://www.instagram.com/talrichenterprises/" class="text-blue-500 underline">Follow us on Instagram!</a>
+        </div>
+        <div class="text-center text-gray-600 text-sm mt-4">
+            &copy; 2025 Talrich Enterprises LTD. All rights reserved.
+        </div>
+        <div class="text-center text-gray-600 text-sm">
+            Powered by <a href="#" class="text-blue-500 hover:underline">Omni-Ray Software Solutions</a>
+        </div>
+    </footer>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+            lazy: true,
+            preloadImages: false,
+            autoplay: {
+                delay: 3000, // time between slides in ms (3000 = 3 seconds)
+                disableOnInteraction: false, // keeps autoplay running even after user interaction
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+</body>
+</html>
