@@ -1,202 +1,280 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Talrich Enterprises</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- SwiperJS-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <style>
-      .scrollbar-hide::-webkit-scrollbar {
-        display: none;
-      }
-
-      .scrollbar-hide {
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none;    /* Firefox */
-      }
+        body {
+           background-color: #e5e5f7;
+            opacity: 1;
+            background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 4px ), repeating-linear-gradient( #9fd9e155, #9fd9e1 );
+        }
     </style>
 </head>
-
-<body class="bg-[#f5f5f5]">
-
-  <div id="home" class="relative h-screen w-full">
-
-    <video class="absolute top-0 left-0 w-full h-screen object-cover" autoplay muted loop>
-      <source src="media/Bookstore-Stock.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-      </source>
-    </video>
-
-    <div class="absolute top-0 left-0 w-full h-full bg-white opacity-70"></div>
-
-    <div class="absolute top-0 left-0 w-full h-[100vh] z-10">
-      <nav class="bg-blue-700 w-full mx-auto px-4 py-2 fixed">
-        <ul class="flex justify-between underline items-center text-white">
-          <li><a href="#home">Home</a></li>
-          <li><a href="index-2.html">Products/Services</a></li>
-          <li><a href="test-index.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <img src="media/talrich-transparent-logo.png" alt="Talrich Logo" class="h-[220px] w-auto mx-auto mt-10">
-
-      <div class="flex flex-col items-center -mt-6">
-        <h1 class="text-3xl text-center font-semibold">Supplying all things 
-          stationary
-          office supplies
-          text books 
-          since 1992.
-        </h1>
-        <h2 class="text-2xl text-center mt-10 max-w-[80%]">
-          Get every item on the school's book list or the office's supplies list in one place.
-        </h2>
-        <button class="py-2 px-4 bg-blue-700 text-white rounded-md mt-12 text-2xl">Send us a Message</button>
-        <p class="font-bold">or</p>
-        <button class="py-2 px-4 bg-blue-700 text-white rounded-md mt-2 text-2xl">Visit Us</button>
-        <p>OPEN Monday - Saturday from 9am  -  6pm</p>
-        <P>CLOSED on Sunday</P>
-      </div>
-    </div>
-  </div>
-
-  <div class="p-4 flex flex-col gap-16">
-    <div id="products-services" class="flex flex-col items-center">
-      <h3 class="text-2xl font-semibold underline mb-8 mr-auto">What We Do</h3>
-
-      <div class="flex flex-col gap-2 w-full">
-        <div class="flex w-full h-[16rem] justify-between items-center">
-          <button id="scrollLeft" class="w-[15%] h-[40%] pr-2 py-auto">
-            <img src="media/arrow-left.svg" alt="Left Arrow" class="h-6 w-6 mx-auto">
-          </button>
-          <div id="carousel" class="w-[90%] overflow-x-auto whitespace-nowrap scrollbar-hide">
-            <div class="bg-red-200 text-white w-[16.5rem] h-[16.5rem] inline-flex items-center justify-center">
-              RED
-            </div>
-            <div class="bg-green-200 text-white w-[16.5rem] h-[16.5rem] inline-flex items-center justify-center">
-              GREEN
-            </div>
-            <div class="bg-yellow-200 text-white w-[16.5rem] h-[16.5rem] inline-flex items-center justify-center">
-              YELLOW
-            </div>
-          </div>
-          <button id="scrollRight" class="w-[15%] h-[40%] pl-2 py-auto">
-            <img src="media/arrow-right.svg" alt="Right Arrow" class="h-6 w-6 mx-auto">
-          </button>
+<body class="flex flex-col min-h-screen">
+    <main class="pb-8">
+        <img src="media/talrich-transparent-logo.png" alt="Talrich Logo" class="h-[190px] w-auto mx-auto -mt-[20px]">
+        <div class="text-center -mt-8 mb-4">
+            <h1 class="text-[1.675rem] font-bold">The 1-stop Stationary Shop.</h1>
+            <p>since 1992</p>
         </div>
 
-        <div class="text-center">Pagination</div>
-      </div>
-
-      <p class="mt-4">Printing & Photocopying
-        <br>
-        Stationary & Office Supplies
-        <br>
-        Textbooks & School Supplies
-        <br>
-        Custom Orders
-      </p>
-      
- 
-      <button class="bg-blue-700 text-white p-2 text-xl rounded-xl mt-6">Shop Now</button>
-    </div>
-
-    <div id="about">
-      <h3 class="text-2xl font-semibold underline mb-8">How We Got Here</h3>
-      <div class="flex flex-col gap-2 w-full">
-        <div class="flex w-full h-[16rem] justify-between items-center">
-          <button id="scrollLeft" class="w-[15%] h-[40%] pr-2 py-auto">
-            <img src="media/arrow-left.svg" alt="Left Arrow" class="h-6 w-6 mx-auto">
-          </button>
-          <div id="carousel" class="w-[90%] overflow-x-auto whitespace-nowrap scrollbar-hide">
-            <div class="bg-red-200 text-white w-[16.5rem] h-[16.5rem] inline-flex items-center justify-center">
-              RED
+        <div class="relative w-[95%] mx-auto h-[24rem] rounded-t-lg overflow-hidden">
+            <div class="absolute inset-0 bg-black opacity-60 z-10 rounded-t-lg"></div>
+            <div class="absolute flex flex-col justify-center w-full h-full z-20 px-6">
+                <h2 class="text-white text-xl z-20 font-semibold underline">Visit Us</h2>
+                <div class="p-3 bg-white opacity-90 z-20 flex flex-col gap-2 mt-4 rounded-md drop-shadow-md">
+                    <p class="text-xl font-bold">Shop #3, Plaza De Negril</p>
+                    <p class="text-lg">Negril, Westmoreland</p>
+                    <p class="text-lg -mt-2">Jamaica</p>
+                    <a href="https://maps.app.goo.gl/uavHaxq3Rfw8W8Vz6" class="flex items-center gap-4 relative text-black text-lg px-4 py-2 rounded-md overflow-hidden bg-[#0CC3CB] border-[#0A999F] border-l-[3px] border-b-[3px] border-r-[1px] border-t-[1px] w-fit cursor-pointer">
+                        <span class="relative z-10 font-semibold">Click to get directions</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="size-4">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </a>
+                    <p class="text-2xl font-bold mt-4"> Monday - Saturday</p>
+                    <p class="text-2xl font-bold -mt-2">9am - 6pm</p>
+                    <p class="font-bold text-xl mt-2 text-red-700">CLOSED on SUNDAYS</p>
+                </div>
             </div>
-            <div class="bg-green-200 text-white w-[16.5rem] h-[16.5rem] inline-flex items-center justify-center">
-              GREEN
-            </div>
-            <div class="bg-yellow-200 text-white w-[16.5rem] h-[16.5rem] inline-flex items-center justify-center">
-              YELLOW
-            </div>
-          </div>
-          <button id="scrollRight" class="w-[15%] h-[40%] pl-2 py-auto">
-            <img src="media/arrow-right.svg" alt="Right Arrow" class="h-6 w-6 mx-auto">
-          </button>
-        </div>
-
-        <div class="text-center">Pagination</div>
-      </div>
-    </div>
-
-    <div id="contact">
-      <h3 class="text-2xl font-semibold underline mb-10">How To Reach Us</h3>
-        <div class="w-full h-[170px] bg-gray-400">
-          MAP MAP MAP MAP 
-        </div>
-        <div class="flex flex-col gap-6 mt-4">
-          <span class="flex items-center gap-3">
-            <img src="media/phone.svg" alt="Mobile Phone" class="w-4 h-4">
-            <p class="font-semibold text-lg">+1 (876) 957-3111 <span class="font-bold">OR</span>+1 (876) 204-2510</p>
-          </span>
-          <span class="flex items-center gap-3">
-            <img src="media/mail.svg" alt="Email" class="w-4 h-4">
-            <p class="font-semibold text-lg">examplepants@gmail.com</p>
-          </span>
+            <video class="w-full h-full object-cover" autoplay muted loop playsinline webkit-playsinline>
+                <source src="media/Bookstore-Stock.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
         
-    </div>
+        <div class="bg-white w-[95%] mx-auto p-6 pt-4 rounded-b-lg drop-shadow-lg">
+            <h2 class="text-xl mb-4 font-semibold underline">Contact Us</h2>
+            <div class="flex flex-col gap-2 mb-4">
+                <p class="text-2xl font-bold">+1 (876) 957-3111</p>
+                <p class="ml-4">or</p>
+                <p class="text-2xl font-bold">+1 (876) 204-2510</p>
+            </div>
+            <a href="https://wa.link/1bx4wq" class="py-2 px-4 bg-[#29A71A] text-white rounded-md text-lg flex items-center border-l-[4px] border-b-[4px] border-r-[1px] border-t-[1px] border-[#1e7d14] w-fit cursor-pointer">
+                <img src="media/whatsapp.png" alt="Whatsapp Icon" class="w-9 h-9 inline-block mr-2"> Reach us on WhatsApp
+            </a>
+        </div>
+        <div class="bg-white w-[95%] mx-auto p-6 mt-5 rounded-lg drop-shadow-lg">
+            <h2 class="text-xl mb-4 underline">Products</h2>
+            <div class="swiper w-[100%] h-fit pb-10">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="relative rounded-lg overflow-hidden">
+                            <img src="media/pexels-pixabay-159644.jpg" alt="Art Supplies" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/60"></div>
+                            <!-- Content -->
+                            <div class="relative z-10 flex flex-col text-white p-4">
+                                <div class="flex gap-2 items-center">
+                                    <div class="text-2xl">🎨</div>
+                                    <h3 class="text-xl font-semibold">Art Supplies</h3>
+                                </div>
+                                <p class="text-md font-bold mt-2">
+                                    Perfect for students, hobbyists, and professionals.
+                                </p>
+                                <ul class="list-disc ml-6 mt-4">
+                                    <li>Paints</li>
+                                    <li>Brushes</li>
+                                    <li>Sketchbooks</li>
+                                    <li>Canvas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="relative rounded-lg overflow-hidden">
+                            <img src="media/pexels-fauxels-3183132.jpg" alt="Office Supplies" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/80"></div>  
+                            <!-- Content -->
+                            <div class="relative z-10 flex flex-col text-white p-4">    
+                                <div class="flex gap-2 items-center">
+                                    <div class="text-2xl">📎</div>
+                                    <h3 class="text-xl font-semibold">Office Supplies</h3>
+                                </div>
+                                <p class="text-md font-bold mt-2">
+                                    Everything you need to keep your workspace efficient.
+                                </p>
+                                <ul class="list-disc ml-6 mt-4">
+                                    <li>Printer Paper</li>
+                                    <li>Notepads</li>
+                                    <li>Folders</li>
+                                    <li>Writing Instruments</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="relative rounded-lg overflow-hidden">
+                            <img src="media/pexels-pixabay-159497.jpg" alt="School Supplies" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/60"></div>
+                            <!-- Content -->
+                            <div class="relative z-10 flex flex-col text-white p-4">
+                                <div class="flex gap-2 items-center">
+                                    <div class="text-2xl">📚</div>
+                                    <h3 class="text-xl font-semibold">School Supplies</h3>
+                                </div>
+                                <p class="text-md font-bold mt-2">
+                                    Everything students need for a successful school year.
+                                </p>
+                                <ul class="list-disc ml-6 mt-4">
+                                    <li>Notebooks</li>
+                                    <li>Pens & Pencils</li>
+                                    <li>Binders & Folders</li>
+                                    <li>Calculators</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination mb-2"></div>
 
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="flex items-center mb-6 gap-2 mx-auto w-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                </svg>
+                <p class="text-sm">Swipe</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+            </div>
 
-  </div>
+            <div class="flex items-center gap-2">
+                <img src="media/info.svg" alt="Info Icon" class="inline-block w-6 h-6">
+                <p><span class="font-bold">Call or Message us</span> to ask about specific items.</p>
+            </div>
+        </div>
+        <div class="bg-white w-[95%] mx-auto p-6 mt-5 rounded-lg drop-shadow-lg">
+            <h2 class="text-xl mb-4 underline">Services</h2>
+            <div class="swiper w-[100%] h-fit pb-10">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="relative rounded-lg overflow-hidden transition">
+                            <img src="media/printer-with-picture-mountain-it-1024x585.jpg" alt="Printing" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/60"></div>
+                            <!-- Content -->
+                            <div class="relative z-10 flex flex-col text-white p-4">
+                                <div class="flex gap-2 items-center">
+                                    <div class="text-2xl mb-3">🖨️</div>
+                                    <h3 class="text-xl font-semibold">Printing</h3>
+                                </div>
+                                <p class="text-md font-bold">
+                                    High-quality printing services for documents, flyers, posters, and more.
+                                </p>
+                                <ul class="list-disc ml-6 mt-2">
+                                    <li>Black & White: $0.10 per page</li>
+                                    <li>Color: $0.50 per page</li>
+                                    <li>Large Format: $5.00 per square foot</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="relative rounded-lg overflow-hidden transition">
+                            <img src="media/5cfa0d3fc48ebb94ed250f47_how-to-photocopy-a-book-hero-image.jpg" alt="Photocopying" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/60"></div>  
+                            <!-- Content -->
+                            <div class="relative z-10 flex flex-col text-white p-4">    
+                                <div class="flex gap-2 items-center">
+                                    <div class="text-2xl mb-3">📄</div>
+                                    <h3 class="text-xl font-semibold">Photocopying</h3>
+                                </div>
+                                <p class="text-md font-bold">
+                                    Fast and reliable photocopying services for all your documents.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="relative rounded-lg overflow-hidden transition">
+                            <img src="media/DFS23-BLOG-13DECT23-DD0003.jpg" alt="Laminating" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-black/60"></div>
+                            <!-- Content -->
+                            <div class="relative z-10 flex flex-col text-white p-4">
+                                <div class="flex gap-2 items-center">
+                                    <div class="text-2xl mb-3">🔖</div>
+                                    <h3 class="text-xl font-semibold">Laminating</h3>
+                                </div>
+                                <p class="text-md font-bold">
+                                    Protect your important documents with our laminating services.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination mb-2"></div>
 
-  <footer class="bg-gray-600 text-center p-4 mt-6 text-white">
-    <img src="media/omni-logo-removebg-preview.png" alt="Omni-Ray Logo" class="h-[25px] w-auto mx-auto mb-2">
-    <span class="text-gray-300">Powered By</span> <a href="#" class="underline">Omni-Ray Software Solutions</a>
-  </footer>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="flex items-center mb-8 gap-2  mx-auto w-fit">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                </svg>
+                <p class="text-sm">Swipe</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+            </div>      
+            <div class="flex items-center gap-2">
+                <img src="media/info.svg" alt="Info Icon" class="inline-block w-6 h-6">
+                <p><span class="font-bold">Call or Message us</span> to ask about custom orders.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-white p-4 text-center">
+        <div>
+            <a href="https://www.instagram.com/talrichenterprises/" class="text-blue-500 underline">Follow us on Instagram!</a>
+        </div>
+        <div class="text-center text-gray-600 text-sm mt-4">
+            &copy; 2025 Talrich Enterprises LTD. All rights reserved.
+        </div>
+        <div class="text-center text-gray-600 text-sm">
+            Powered by <a href="#" class="text-blue-500 hover:underline">Omni-Ray Software Solutions</a>
+        </div>
+    </footer>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+            lazy: true,
+            preloadImages: false,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: true,
+            },
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const carousel = document.getElementById('carousel');
-      const scrollLeftBtn = document.getElementById('scrollLeft');
-      const scrollRightBtn = document.getElementById('scrollRight');
-      
-      // Width of one carousel item (16.5rem + margin if any)
-      // Since you're using inline-flex, the items are directly next to each other
-      const itemWidth = 17 * 16; // Convert rem to pixels (1rem = 16px typically)
-      
-      // Scroll left button functionality
-      scrollLeftBtn.addEventListener('click', function() {
-        carousel.scrollBy({
-          left: -itemWidth,
-          behavior: 'smooth'
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
         });
-      });
-      
-      // Scroll right button functionality
-      scrollRightBtn.addEventListener('click', function() {
-        carousel.scrollBy({
-          left: itemWidth,
-          behavior: 'smooth'
-        });
-      });
-      
-      // Optional: Disable buttons when at start/end of carousel
-      function updateButtonStates() {
-        const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
-        
-        scrollLeftBtn.disabled = carousel.scrollLeft <= 0;
-        scrollRightBtn.disabled = carousel.scrollLeft >= maxScrollLeft;
-      }
-      
-      // Update button states on scroll
-      carousel.addEventListener('scroll', updateButtonStates);
-      
-      // Initial button state update
-      updateButtonStates();
-    });
-  </script>
+    </script>
 </body>
-
 </html>
